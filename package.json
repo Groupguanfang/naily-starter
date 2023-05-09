@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/app.module",
-    "dev": "nodemon -x npm run start -w src/**/* --ext ts,json,js,mjs,cjs"
+    "dev": "nodemon -x npm run start -w src/**/* --ext ts,json,js,mjs,cjs",
+    "prod": "node dist/app.module"
   },
   "author": "",
   "license": "UNLICENSED",
