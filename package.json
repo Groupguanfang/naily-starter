@@ -1,12 +1,20 @@
 {
-  "name": "mynest-starter",
+  "name": "naily-starter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "一个卡哇伊的Naily描述QAQ",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "npm run build && node dist/app.module",
+    "dev": "nodemon -x npm run start -w src/**/* --ext ts,json,js,mjs,cjs"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "naily": "^2.0.15",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
