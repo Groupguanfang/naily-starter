@@ -7,6 +7,6 @@ export class AppController {
 
   @GetMapping()
   public getHello() {
-    return "aa";
+    return this.appService.getHello();
   }
 }
