@@ -1,4 +1,10 @@
 import "./app.controller";
 
-import app from "naily/app";
-app.boot(8000);
+import { BootNailyApplication, CanBoot, type IMount } from "naily/app";
+
+@BootNailyApplication
+export class NailyApplication implements CanBoot {
+  main(app: IMount): void {
+    app.boot(3000);
+  }
+}
